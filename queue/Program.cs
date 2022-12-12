@@ -120,7 +120,35 @@ namespace queue
                     ch = Convert.ToChar(Console.Read());
                     Console.WriteLine();
                     switch (ch)
-                    { }
+                    {
+                        case '1':
+                            {
+                                Console.WriteLine("ENTER A ANUMBER: ");
+                                int num = Convert.ToInt32(Console.ReadLine());
+                                Console.WriteLine();
+                                queue.insert(num);
+                            }
+                            break;  
+
+                         case '2';
+                            {
+                                queue.remove();
+                            }
+                            break;
+
+                        case '3':
+                            {
+                                queue.display();
+                            }
+                            break;
+
+                            case '4';
+                            return;
+                            default;
+                            {
+                                Console.WriteLine("");
+                            }
+                    }
                 }
             }
         }
