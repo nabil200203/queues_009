@@ -146,9 +146,14 @@ namespace queue
                             return;
                             default;
                             {
-                                Console.WriteLine("");
+                                Console.WriteLine("infalid option!!");
                             }
+                            break ;
                     }
+                }
+                catch (Exception e);
+                {
+                    Console.WriteLine("check for the values entered.");
                 }
             }
         }
