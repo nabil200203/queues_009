@@ -20,6 +20,15 @@ namespace queue
             FRONT = -1;
             REAR = -1;
         }
+
+        public void insert(int element)
+        {
+            /*This statement check for the overflow condition. */
+            if ((FRONT == 0 && REAR == max -1) ||(FRONT == REAR +1))
+            {
+
+            }
+        }
         static void Main(string[] args)
         {
         }
