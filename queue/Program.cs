@@ -70,6 +70,39 @@ namespace queue
                 /* FRONT is inremented by one if it is not the first element of array. */
                 FRONT = FRONT + 1;
         }
+
+        public void display()
+        {
+            int FRONT_position = FRONT;
+            int REAR_position = REAR;
+            /*Chceks if the queue  is empty.*/
+            if (FRONT == -1)
+            {
+                Console.WriteLine("queue is empty\n");
+                return;
+            }
+            Console.WriteLine("\nElements in the queue are ......................\n");
+            else 
+            {
+                /* tranverses the queue till the last element present in an array. */
+                while (FRONT_position <= max -1)
+                {
+                    Console.Write(queue_array[FRONT_position] + " ");
+                    FRONT_position++;
+                }
+                /* set the FRONT position to the first element of the array. */
+                FRONT_position = 0;
+                /* traverse the array till the last element present in the queue. */
+                while (FRONT_position < REAR_position)
+                {
+                    Console.Write(queue_array[FRONT_position] + " ");
+                    FRONT_position++;
+                }
+                Console.WriteLine();
+            }
+
+
+        }
         static void Main(string[] args)
         {
         }
